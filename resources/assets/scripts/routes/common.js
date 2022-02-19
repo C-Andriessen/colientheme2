@@ -4,6 +4,8 @@ export default {
     const menu = document.querySelector('.menu'); 
 const menuItems = document.querySelector('.menu-items'); 
 
+// const image = document.querySelector('img')
+
 menu.addEventListener('click', () => {
     if (menu.innerText == 'Menu //') {
     menuItems.className = 'menu-items-active d-flex fixed-top';
