@@ -6,14 +6,14 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $paintings = get_posts(['category' => 8, 'order' => 'DESC']) @endphp
-@php $posts = get_posts(['category' => 7, 'order' => 'DESC']) @endphp
-@php $videos = get_posts(['category' => 6, 'order' => 'DESC']) @endphp
+@php $paintings = get_posts(['category' => 11, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $posts = get_posts(['category' => 10, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $videos = get_posts(['category' => 13, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @php $tribe = get_page_by_title('main-page-troep-troup-tribe', OBJECT, 'post') @endphp
 @php $biografie = get_page_by_title('main-page-biografie', OBJECT, 'post') @endphp
 <div class="section-1-main d-flex justify-content-around mb-5">
   <img class="main-image" src="{{ get_the_post_thumbnail_url($biografie) }}">
-  <div class="text-section-1 d-flex flex-column">
+  <div class="text-section-1 d-flex flex-column ml-3">
     @php echo($biografie->post_content) @endphp
     <p class="text-light main-text">{{ $biografie->post_excerpt }}</p>
     <a href="/biografie" class="btn btn-dark read-btn mt-4">Lees meer</a>

@@ -1,8 +1,9 @@
+  @php $header = get_page_by_title('header-img', OBJECT, 'post') @endphp
   <div class="menu-items">
     <div class="container mt-5">
       <div class="margin-top">
         <div class="d-flex mt-3">
-          <img src="http://colien.local/wp-content/uploads/2022/02/Afbeelding5.png" alt="" class="img-fluid me-5 header-img">
+          <img src="{{ get_the_post_thumbnail_url($header) }}" alt="" class="img-fluid me-5 header-img">
           <div class="flex-column">
             @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navbar-nav', 'walker' => new \App\wp_bootstrap4_navwalker()]) !!}
