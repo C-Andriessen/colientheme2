@@ -78,7 +78,7 @@
     @php echo($videos[$k]->post_content) @endphp
 </div>
 @endfor
-<a href="/videos" class="btn btn-dark read-btn w-100 mb-6 mt-5">Bekijk alle video's</a>
+<a href="/videos" class="btn btn-dark read-btn w-100 mb-5 mt-5">Bekijk alle video's</a>
 </div>
 @include('partials.page-header')
 @include('partials.content-page')
