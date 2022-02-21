@@ -6,6 +6,16 @@ body {
   font-family: $text-primary;
 }
 
+h1.contact-info {
+  font-size: 45px;
+  font-weight: bold;
+  color: #2496cd;
+}
+
+p.contact-info {
+  font-size: 30px;
+}
+
 header {
   margin: 0 70px;
   font-weight: 500;
@@ -507,6 +517,14 @@ img.bio-image {
 }
 
 @media screen and (max-width: 1024px) {
+  h1.contact-info {
+    font-size: 37px;
+  }
+
+  p.contact-info {
+    font-size: 27px;
+  }
+
   .main-title {
     font-size: 2.1em;
   }
@@ -618,9 +636,10 @@ img.bio-image {
     flex-wrap: wrap;
 
     img {
-      width: 15vw;
+      width: 80vw;
       max-width: none;
-      height: 30vw;
+      height: 50vw;
+      object-position: 50% 25%;
     }
   }
 
@@ -715,6 +734,14 @@ img.bio-image {
 }
 
 @media screen and (max-width: 650px) {
+  h1.contact-info {
+    font-size: 4.154vw;
+  }
+
+  p.contact-info {
+    font-size: 2.615vw;
+  }
+
   .main-title {
     font-size: 4.615vw;
   }
@@ -730,11 +757,11 @@ img.bio-image {
   }
 
   p.menu {
-    font-size: 2.308vw;
+    font-size: 2.808vw;
   }
 
   .brand {
-    font-size: 2.308vw;
+    font-size: 2.808vw;
   }
 
   .read-btn {

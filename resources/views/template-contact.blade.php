@@ -27,6 +27,16 @@
     <textarea name="bericht" id="bericht" cols="100" rows="10" class="mb-5"></textarea>
     <button type="submit" class="btn btn-dark-blue-contactpage">Verzend bericht</button>
   </form>
+  <div class="d-flex justify-content-between">
+    <div>
+      <h1 class="contact-info">TELEFOON</h1>
+      <p class="contact-info">0031 (0) 650644975</p>
+    </div>
+    <div>
+      <h1 class="contact-info">E-MAIL</h1>
+      <p class="contact-info">colienlangerwerf@gmail.com</p>
+    </div>
+  </div>
 </div>
 @include('partials.page-header')
 @include('partials.content-page')
