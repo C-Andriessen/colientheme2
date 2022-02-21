@@ -1,4 +1,4 @@
-<div class="section-sand d-flex justify-content-center container-fluid px-6 flex-column">
+<div class="section-sand d-flex justify-content-center container-fluid px-6 flex-column mt-5 pb-6">
   <div class="d-flex justify-content-between align-items-center mt-6">
     <h1 class="footer-title">CONTACT OPNEMEN?</h1>
     <a href="/contact" class="btn-contact p-2">Contact me</a>
