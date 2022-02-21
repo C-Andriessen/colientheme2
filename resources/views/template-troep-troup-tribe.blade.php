@@ -6,12 +6,13 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $pictures = get_posts(['category' => 9, 'order' => 'DESC']) @endphp
+@php $pictures = get_posts(['category' => 9, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $tribePage = get_page_by_title('troep-troup-tribe-pagina', OBJECT, 'post') @endphp
 </div>
 </div>
-<div class="section-sand container-fluid px-6 d-flex pb-6">
-  <img src="<?= get_template_directory_uri() . '/assets/images/troep-troup-tribe.jpg' ?>" alt="troep-troup-tribe" class="gallery-main mt-6">
-  <div class="mt-6 ml-5">
+<div class="section-sand container-fluid px-6 d-flex pb-6 tribe-main">
+  <img src="{{ get_the_post_thumbnail_url($tribePage) }}" alt="troep-troup-tribe" class="gallery-main mt-6">
+  <div class="mt-6 ml-5 tribe-main-text">
     <h1 class="gallery-title mt-6 font-weight-bold text-dark-blue">TROUP</h1>
     <h1 class="gallery-title mt-6 font-weight-bold">TROEP</h1>
     <h1 class="gallery-title mt-6 font-weight-bold text-dark-blue">TRIBE.</h1>

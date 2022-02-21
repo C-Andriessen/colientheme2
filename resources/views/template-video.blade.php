@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-@php $videos = get_posts(['category' => 6, 'order' => 'DESC']) @endphp
+@php $videos = get_posts(['category' => 6, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @while(have_posts()) @php the_post() @endphp
 <div class="d-flex mt-9 justify-content-center align-items-center flex-column">
   <h1 class="news-video-title text-light">Video's</h1>

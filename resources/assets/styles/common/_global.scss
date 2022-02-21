@@ -366,7 +366,7 @@ img.gallery-main {
   max-width: 16.5vw;
   display: block;
   object-fit: cover;
-  max-height: min-content;
+  max-height: 50vw;
 }
 
 .pictures figure {
@@ -383,6 +383,18 @@ img.gallery-main {
 }
 
 // eind masonry
+
+.videos-2 h2 {
+  color: #000;
+  width: 75vw;
+}
+
+.carousel-img-custom {
+  height: 70vh;
+  width: 75%;
+  object-fit: contain;
+  object-position: 50% 10%;
+}
 
 .news-video-title {
   font-size: 150px;
@@ -436,6 +448,8 @@ img.gallery-main {
 img.bio-image {
   height: 35vw;
   border-radius: 2%;
+  object-fit: cover;
+  width: 30vw;
 }
 
 @media screen and (max-width: 1475px) {
@@ -466,6 +480,21 @@ img.bio-image {
 
   .gallery-title {
     font-size: 70px;
+  }
+
+  .videos {
+    p {
+      font-size: 23px;
+    }
+  }
+
+  .paintings-home {
+    justify-content: space-around;
+
+    img {
+      height: 20.746vw;
+      width: 27.119vw;
+    }
   }
 }
 
@@ -531,7 +560,6 @@ img.bio-image {
   .header-img {
     width: 40vw;
     object-fit: cover;
-    // margin-left: 5vw;
   }
 
   .nav-link {
@@ -573,6 +601,105 @@ img.bio-image {
   .btn-dark-blue-contactpage {
     font-size: 20px;
   }
+
+  .pictures {
+    column-count: 2;
+    column-gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    img {
+      width: 15vw;
+      max-width: none;
+      height: 30vw;
+    }
+  }
+
+  .section-sand-wp {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .section-light-wp {
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .section-orange-wp {
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .paintings-home {
+    justify-content: space-around;
+
+    img {
+      height: 24.414vw;
+      width: 24.414vw;
+    }
+
+    p {
+      max-width: 250px;
+    }
+  }
+
+  .videos-2 {
+    h2 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  .post-section {
+    h1 {
+      font-size: 30px;
+      max-width: 400px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 400px;
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+
+  .entry-content {
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -600,13 +727,14 @@ img.bio-image {
 
   .read-btn {
     width: 70%;
-    font-size: 1.692vw;
+    font-size: 3.294vw;
     padding: 0.923vw;
   }
 
   .tribe-text {
-    font-size: 2.308vw;
+    font-size: 3.059vw;
     letter-spacing: 0;
+    max-width: none;
   }
 
   .btn-dark-blue {
@@ -680,5 +808,180 @@ img.bio-image {
 
   ::placeholder {
     font-size: 2.615vw;
+  }
+
+  .pictures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    img {
+      width: 80vw;
+      max-width: none;
+      height: 100vh;
+      margin-bottom: 15px;
+      object-position: 50% 25%;
+    }
+  }
+
+  .section-sand-wp {
+    padding: 2% 5%;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+
+  .section-light-wp {
+    padding: 2% 5%;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .section-orange-wp {
+    padding: 2% 5%;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .paintings-home {
+    justify-content: space-around;
+    flex-direction: column;
+
+    .paintings-inner {
+      flex-direction: column;
+    }
+
+    img {
+      height: 250px;
+      width: 250px;
+    }
+
+    p {
+      max-width: 250px;
+      font-size: 15px;
+    }
+  }
+
+  .videos-2 {
+    h2 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .post-section {
+    h1 {
+      font-size: 30px;
+      max-width: 400px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 400px;
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+
+  .entry-content {
+    p {
+      font-size: 3.623vw;
+      width: 100%;
+    }
+  }
+
+  .bio-text {
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .tribe-main {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  .tribe-main-text {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0 !important;
+
+    h1 {
+      font-size: 7.059vw;
+    }
+  }
+
+  .painting-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .d-90 {
+      height: 50px;
+      transform: rotate(0deg);
+      display: flex;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 8.235vw;
+    }
+  }
+
+  .videos {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .carousel-img-custom {
+    height: 40vh;
   }
 }
