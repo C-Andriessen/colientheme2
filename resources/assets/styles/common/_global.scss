@@ -252,7 +252,15 @@ header.single {
   p {
     color: #fff;
     font-size: 25px;
-    width: 45vw;
+    width: 70vw;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 10px 0;
     text-align: center;
   }
 
@@ -699,6 +707,10 @@ img.bio-image {
     p {
       font-size: 20px;
     }
+
+    h3 {
+      font-size: 30px;
+    }
   }
 }
 
@@ -731,6 +743,11 @@ img.bio-image {
     padding: 0.923vw;
   }
 
+  .btn-dark {
+    font-size: 15px;
+    width: 100% !important;
+  }
+
   .tribe-text {
     font-size: 3.059vw;
     letter-spacing: 0;
@@ -738,8 +755,9 @@ img.bio-image {
   }
 
   .btn-dark-blue {
-    font-size: 2vw;
-    width: 50%;
+    font-size: 4.063vw;
+    width: 100%;
+    padding: 3px 0;
   }
 
   img.tribe-img {
@@ -902,17 +920,17 @@ img.bio-image {
 
   .post-section {
     h1 {
-      font-size: 30px;
-      max-width: 400px;
+      font-size: 4.615vw;
+      max-width: 61.538vw;
     }
 
     p {
-      font-size: 20px;
-      max-width: 400px;
+      font-size: 3.077vw;
+      max-width: 61.538vw;
     }
 
     img {
-      width: 400px;
+      width: 61.538vw;
     }
   }
 
@@ -920,6 +938,11 @@ img.bio-image {
     p {
       font-size: 3.623vw;
       width: 100%;
+    }
+
+    h3 {
+      font-size: 4.615vw;
+      font-weight: bold;
     }
   }
 

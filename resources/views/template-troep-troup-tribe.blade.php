@@ -6,7 +6,7 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $pictures = get_posts(['category' => 9, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $pictures = get_posts(['category_name' => 'troep-troup-tribe', 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @php $tribePage = get_page_by_title('troep-troup-tribe-pagina', OBJECT, 'post') @endphp
 </div>
 </div>
@@ -18,7 +18,7 @@
     <h1 class="gallery-title mt-6 font-weight-bold text-dark-blue">TRIBE.</h1>
   </div>
 </div>
-<div class="container-fluid px-6">
+<div class="container-fluid px-6 mb-6">
   <h1 class="mt-5 text-light gallery-title mb-5">Gallerij<span class="text-dark">.</span></h1>
   <div class="pictures px-5">
     @foreach($pictures as $picture)

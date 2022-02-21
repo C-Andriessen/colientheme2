@@ -6,7 +6,7 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $pictures = get_posts(['category' => 8, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $pictures = get_posts(['category_name' => 'schilderijen', 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @php $paintingPage = get_page_by_title('schilderijen-pagina', OBJECT, 'post') @endphp
 </div>
 </div>
@@ -17,7 +17,7 @@
   </div>
   <img src="{{ get_the_post_thumbnail_url($paintingPage) }}" alt="schilderijen" class="gallery-main mt-6">
 </div>
-<div class="container-fluid px-6">
+<div class="container-fluid px-6 mb-6">
   <h1 class="mt-5 text-light gallery-title mb-5">Gallerij<span class="text-dark">.</span></h1>
   <div class="pictures px-5">
     @foreach($pictures as $picture)
