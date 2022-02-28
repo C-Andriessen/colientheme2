@@ -6,7 +6,7 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $posts = get_posts(['category_name' => 'posts', 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $posts = get_posts(['category' => 7, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 
 <div class="d-flex mt-6 justify-content-center align-items-center flex-column">
   <h1 class="news-video-title text-light">Nieuws</h1>

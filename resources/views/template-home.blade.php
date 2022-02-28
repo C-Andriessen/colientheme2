@@ -6,9 +6,9 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $paintings = get_posts(['category' => 11, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
-@php $posts = get_posts(['category' => 10, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
-@php $videos = get_posts(['category' => 13, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $paintings = get_posts(['category' => 8, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $posts = get_posts(['category' => 7, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $videos = get_posts(['category' => 6, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @php $tribe = get_page_by_title('main-page-troep-troup-tribe', OBJECT, 'post') @endphp
 @php $biografie = get_page_by_title('main-page-biografie', OBJECT, 'post') @endphp
 <div class="section-1-main d-flex justify-content-around mb-5">

@@ -5,7 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-@php $cvItems = get_posts(['category_name' => 'biografie-category', 'order' => 'ASC', 'numberposts' => '-1']) @endphp
+@php $cvItems = get_posts(['category' => 5, 'order' => 'ASC', 'numberposts' => '-1']) @endphp
 @php $biografie = get_page_by_title('biografie', OBJECT, 'post') @endphp
 @while(have_posts()) @php the_post() @endphp
 <div class="d-flex justify-content-around mb-9 mt-6 align-items-center">

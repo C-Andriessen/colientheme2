@@ -6,7 +6,7 @@
 
 @section('content')
 @while(have_posts()) @php the_post() @endphp
-@php $pictures = get_posts(['category_name' => 'schilderijen', 'order' => 'DESC', 'numberposts' => '-1']) @endphp
+@php $pictures = get_posts(['category' => 8, 'order' => 'DESC', 'numberposts' => '-1']) @endphp
 @php $paintingPage = get_page_by_title('schilderijen-pagina', OBJECT, 'post') @endphp
 </div>
 </div>
