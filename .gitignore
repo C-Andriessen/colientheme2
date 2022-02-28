@@ -4,3 +4,6 @@
 npm-debug.log
 yarn-error.log
 node_modules
+dist
+/vendor
+resources/assets/config-local.json
